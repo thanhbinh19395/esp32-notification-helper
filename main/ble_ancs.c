@@ -117,7 +117,7 @@ void esp_receive_apple_notification_source(uint8_t *message, uint16_t message_le
     ESP_LOGI(BLE_ANCS_TAG, "EventID:%s EventFlags:0x%x CategoryID:%s CategoryCount:%d NotificationUID:%" PRIu32, EventIDS, EventFlags, Cidstr, CategoryCount, NotificationUID);
 }
 
-void esp_receive_apple_data_source(uint8_t *message, uint16_t message_len)
+void esp_receive_apple_data_source(uint8_t *message, uint16_t message_len, ble_notification_arrived_t notification_arrived)
 {
     //esp_log_buffer_hex("data source", message, message_len);
     if (!message || message_len == 0) {
@@ -151,6 +151,7 @@ void esp_receive_apple_data_source(uint8_t *message, uint16_t message_len)
                         break;
                     case NotificationAttributeIDMessage:
                         esp_log_buffer_char("Message", &attrs[3], len);
+                        notification_arrived((char*) &attrs[3]);
                         break;
                     case NotificationAttributeIDMessageSize:
                         esp_log_buffer_char("MessageSize", &attrs[3], len);

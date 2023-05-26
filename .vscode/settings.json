@@ -1,0 +1,19 @@
+{
+  "idf.port": "/dev/cu.wchusbserial56570382081",
+  "idf.adapterTargetName": "esp32",
+  "idf.openOcdConfigs": [
+    "interface/ftdi/esp32_devkitj_v1.cfg",
+    "target/esp32.cfg"
+  ],
+  "idf.flashType": "UART",
+  "files.associations": {
+    "lvgl.h": "c",
+    "lv_mem.h": "c",
+    "lv_math.h": "c",
+    "lv_demo_flex_layout_main.h": "c",
+    "string": "c",
+    "iosfwd": "c",
+    "filesystem": "c",
+    "string.h": "c"
+  }
+}

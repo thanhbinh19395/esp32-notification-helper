@@ -110,9 +110,10 @@ typedef enum {
 
 #define ESP_NOTIFICATIONUID_LEN   4
 
+typedef void (*ble_notification_arrived_t)(const char * text);
 
 char *EventID_to_String(uint8_t EventID);
 char *CategoryID_to_String(uint8_t CategoryID);
 void esp_receive_apple_notification_source(uint8_t *message, uint16_t message_len);
-void esp_receive_apple_data_source(uint8_t *message, uint16_t message_len);
+void esp_receive_apple_data_source(uint8_t *message, uint16_t message_len, ble_notification_arrived_t notification_arrived);
 char *Errcode_to_String(uint16_t status);
