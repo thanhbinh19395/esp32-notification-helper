@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/Users/binhho/esp/projects/ble_ancs/ble_ancs/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
